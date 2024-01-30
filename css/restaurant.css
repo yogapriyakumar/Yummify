@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;500&display=swap");
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* variables */
+:root {
+  --light-color: whitesmoke;
+  --dark-color: black;
+  --dark-color-trasn: rgba(0,0, 0, 0.2);
+  --light-color-trans: rgba(244, 241, 241, 0.2);
+  --lighter-gray: #808080;
+  --faded-black:rgba(0, 0, 0, 0.9);
+  --faded-white: rgba(255, 255, 255, 0.9);
+  --border: 3px solid black;
+  --border-radius: 3px;
+  --bright-green: #60b246;
+}
+
+/* common stylings */
+.d-flex {
+  display: flex;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.li-type-none {
+  list-style-type: none;
+}
+
+.text-deco-none {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+.dark-color {
+  color: black;
+}
+
+.light-color {
+  color: whitesmoke;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 200vh !important;
+}
+
+.header_cls {
+  height: 50px;
+  background-color: gray;
+  position: sticky;
+  top: 0px;
+}
+
+.footer_parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.foot_off_plate {
+  background-color: rgb(55, 38, 38);
+  color: white;
+  padding: 0px 40px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+}
+
+.footer_cls {
+  background-color: var(--bright-green);
+  color: white;
+  justify-content: space-between;
+  padding: 0px 40px;
+  height: 45px;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+.footer_cls div {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  column-gap: 5px;
+}
+.footer_cls .foot_item_tot_price :last-child {
+  border-left: 1.5px solid white;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+/*# sourceMappingURL=restaurant.css.map */
